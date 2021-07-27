@@ -13,8 +13,7 @@ $directory->selectListings($filter);
 
 $title = "PHP Conferences";
 require 'inc/header.php';
-$test = new ListingPremium();
-$test->setDescription('My description with <b>good tags</b> and <a href="http://example.com">bad tags</a>');
+$test = new ListingPremium(['description' => 'My description with <b>good tags</b> and <a href="http://example.com">bad tags</a>!']);
 var_dump($test);
 var_dump( get_class($test));
 var_dump( is_a($test, 'ListingBasic'));
