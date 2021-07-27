@@ -122,7 +122,6 @@ class Collection
         }
         $sql = substr($sql, 0, -2);
         $sql .= ' WHERE id = :id';
-
         try {
             $statement = $this->db->prepare($sql);
             $statement->execute($data);
