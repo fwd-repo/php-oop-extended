@@ -60,7 +60,7 @@ class Collection
      */
     public function addListing($data = null)
     {
-        $listing = new ListingBasic($data);
+        $listing = new ListingPremium($data);
         $this->listings[] = $listing;
         return $listing;
     }
